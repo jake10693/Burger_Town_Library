@@ -1,3 +1,15 @@
+
+
+body {
+  background-image: url("https://johnrieber.files.wordpress.com/2017/06/its-raining-cheeseburgers-kathleen-sartoris.jpg?w=900");
+  text-decoration: aliceblue;
+  animation:burger_bg_anime 120s linear infinite;
+}
+
+h2 {
+  font-size: xx-large;
+  font-weight: 500;
+}
 li {
     padding: 5px;
     margin: 5px;
@@ -7,11 +19,15 @@ li {
   .label {
     font-weight: bold;
   }
+
+  .column {
+  background-color: rgba(220, 164, 164, 0.161);
+  }
   
   .create-form {
     padding: 5px;
     margin: 5px;
-    background: aqua;
+    background: rgba(255, 0, 0, .6);
   }
   
   .form-group {
@@ -20,4 +36,30 @@ li {
 
   .hide {
     visibility: hidden;
+  }
+.yellow-bg {
+  background-color: rgba(255, 255, 0, .6);
+}
+.orange-bg {
+  background-color: rgba(255, 166, 0, .6);
+}
+  .flex-container {
+    display: flex;
+  flex-direction: column;
+  }
+
+  .create-form, h2 {
+    text-align: center;
+  }
+
+  @keyframes burger_bg_anime{
+    0%{background-position:0px 0px;}
+    12.5%{background-position:0px -2122px;}
+    25%{background-position:2122px -4244px;}
+    37.5%{background-position:4244px -4244px;}
+    50%{background-position:6366px -2122px;}
+    62.5%{background-position:6366px 0px;}
+    75%{background-position:4244px 2122px;}
+    87.5%{background-position:2122px 2122px;}
+    100%{background-position:0px 0px;}
   }
