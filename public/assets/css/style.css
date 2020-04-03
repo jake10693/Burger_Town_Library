@@ -3,6 +3,10 @@
 body {
   background-image: url("https://johnrieber.files.wordpress.com/2017/06/its-raining-cheeseburgers-kathleen-sartoris.jpg?w=900");
   text-decoration: aliceblue;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
   animation:burger_bg_anime 120s linear infinite;
 }
 
